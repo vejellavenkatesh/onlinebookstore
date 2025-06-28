@@ -1,11 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>onlinebookstore</groupId>
 	<artifactId>onlinebookstore</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
+
 	<build>
 		<sourceDirectory>src/main/java</sourceDirectory>
 		<finalName>onlinebookstore</finalName>
@@ -33,6 +35,7 @@
 					</execution>
 				</executions>
 			</plugin>
+
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.11.0</version>
@@ -41,6 +44,7 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.2.1</version>
@@ -50,14 +54,13 @@
 			</plugin>
 		</plugins>
 	</build>
-	<dependencies>
 
+	<dependencies>
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<version>42.3.7</version>
 		</dependency>
-
 
 		<dependency>
 			<groupId>mysql</groupId>
@@ -65,21 +68,22 @@
 			<version>8.0.28</version>
 		</dependency>
 
-
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1.0</version>
 		</dependency>
-		<distributionManagement>
-    <repository>
-      <id>maven-releases</id>
-      <url>http://13.126.195.148:8081/repository/maven-releases/</url>
-    </repository>
-    <snapshotRepository>
-      <id>maven-snapshots</id>
-      <url>http://13.126.195.148:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
-  </distributionManagement>
 	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>maven-releases</id>
+			<url>http://13.126.195.148:8081/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>maven-snapshots</id>
+			<url>http://13.126.195.148:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 </project>
