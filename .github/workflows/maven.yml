@@ -39,7 +39,7 @@ jobs:
       - name: Trivy File System Scan
         run: trivy fs --format json -o fs-report.json .
 
-     - name: Cache SonarQube packages
+      - name: Cache SonarQube packages
         uses: actions/cache@v4
         with:
           path: ~/.sonar/cache
