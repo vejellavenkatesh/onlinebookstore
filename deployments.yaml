@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: vmns/eks-deploy
+        image: vamshidhar1128/onlinebook:latest
         ports:
         - containerPort: 8080
 
