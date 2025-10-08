@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: new1
-        image: venkatv11/onli:latest
+        image: venkatv11/apt:latest
         ports:
         - containerPort: 8081
 ---
