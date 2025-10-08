@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: new1
-        image: vmns/new1:latest
+        image: venkatv11/onli:latest
         ports:
         - containerPort: 8081
 ---
